@@ -104,8 +104,6 @@ public class LoginActivity extends ActionBarActivity {
                             //declare the AlertDialog
                             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                             builder.setMessage("The Username Entered is Incorrect");
-                            Toast.makeText(getApplicationContext(), "Username is: " + c.getString(c.getColumnIndex(MyContentProvider.COLUMN_USERNAME))
-                                    + "\nPassword is: " + c.getString(c.getColumnIndex(MyContentProvider.COLUMN_PASSWORD)), Toast.LENGTH_LONG).show();
                             builder.setPositiveButton("OK", null);
                             return builder.create();
                         }
